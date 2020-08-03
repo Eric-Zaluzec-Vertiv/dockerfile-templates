@@ -1,0 +1,17 @@
+# TEMPLATE Dockerfile Instructions
+
+## FROM          container system image to start from 
+
+## WORKDIR       defines directory in container where commands are ran
+
+## COPY          files to copy from host directory to container during build
+
+## RUN           system commands to run inside container during build
+
+## VOLUME        volume mount points to directories on host system
+
+## EXPOSE        expose network ports to host interface
+
+## ENTRYPOINT    executable or script to run inside container
+
+## CMD           commands after entry point to run inside container
