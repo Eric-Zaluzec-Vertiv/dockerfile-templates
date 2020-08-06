@@ -7,7 +7,7 @@
 
 ## Example2 - Copy code & Test
 #COPY src/ /
-#CMD ["/hello-vertiv.py"]
+#CMD ["/hello-vertiv.py", "&"]
 
 
 ## Example 3 - Install packages & Debug container
