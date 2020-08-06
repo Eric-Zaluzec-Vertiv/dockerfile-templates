@@ -22,6 +22,8 @@ jobs:
       
     - name: Setup access to other repos
       run: |
+        #https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
+        #https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets
         git config --global url."https://eric-zaluzec-vertiv:${{ secrets.CI }}@github.com".insteadOf "https://github.com"
 
     - name: Build the API Gateway Docker image
