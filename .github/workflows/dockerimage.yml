@@ -54,6 +54,6 @@ jobs:
         docker tag dockerfile-templates $IMAGE_ID:$VERSION
         
         # Container run test
-        docker run -ti dockerfile-templates
+        docker run dockerfile-templates
         
         docker push $IMAGE_ID:$VERSION   
