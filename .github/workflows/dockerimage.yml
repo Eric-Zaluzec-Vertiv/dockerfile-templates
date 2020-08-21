@@ -52,4 +52,8 @@ jobs:
         echo VERSION=$VERSION
         
         docker tag dockerfile-templates $IMAGE_ID:$VERSION
+        
+        # Container run test
+        docker run dockerfile-templates
+        
         docker push $IMAGE_ID:$VERSION   
